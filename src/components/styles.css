@@ -1,0 +1,21 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css');
+
+.card {
+    width:180px;
+    height: 180px;
+    padding:0px;
+    border-radius: 10px;
+    border-color: blue;
+    
+}
+
+.dashboardbtn, .displaybtn {
+    height:100vh;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+.ms-3 {
+    border-color: blue;
+    border-radius: 2px;
+}

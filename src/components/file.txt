@@ -1,0 +1,36 @@
+@ . Login.js:  i should match bettween mylogi and signup. signup will be the default in div. just make of usestate.
+
+Mylogin.js :  My data should be send (post) to the backend server. 
+ oohpps. server not donee!!!
+
+signup.js: i should fetch data (email and pasword to the server ) to compare with the given ones.
+ forgot password shoul input a model to give a new password by sending the email.oops complicated, let give him a new email/password.
+then send him to his company.
+
+Dashboard.js: call all comampanies and display them. let the user click one one. then fetck all user with company(name)
+ then check if he is in. then display all members.
+or allow the user  create company, then 
+
+the company logo:
+it will be a square equal width to length,with nested circle having some shapes to ensure its performance. i can toggle different color,
+for different company to be different. 
+
+
+IN backend
+
+. companies (name). check the user by email and password.
+search user by name.
+filter user by company name
+
+if user logged in, orient him to company Dashboard
+
+if user signed in orient him to his company profile. list of employees.
+
+
+OTHER ISSSUES:
+1. add a footer to the welcome.js routes and even navbar if needed.
+2. create a scrol or replace two divs when adding a user inside company, give him conpany name, ...
+3. 
+
+
+WHILE DEPLOYING, SERVER WILL BE TO ONRENDER AND ON CLIENT ,NETLIFY. THEYSHOUL HAVE DIHHERENT REPOSITORY ON GITHUB. 
