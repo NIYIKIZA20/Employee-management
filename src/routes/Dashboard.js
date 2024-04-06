@@ -10,7 +10,7 @@ const Dashboard =()=> {
 
     const companyFetch = async()=>{
       try {
-        const response= await fetch("http://localhost:3002/company");
+        const response= await fetch("https://niyikiza-ms.onrender.com//company");
         const jsonData= await response.json();
         setComp(jsonData);
       }catch (err) {
@@ -39,7 +39,7 @@ const Dashboard =()=> {
         if (selectedItem !== null) {
         // Make a delete request to your backend server
           
-          await fetch(`http://localhost:3002/company/${selectedItem}`,{
+          await fetch(`https://niyikiza-ms.onrender.com//company/${selectedItem}`,{
             method: "DELETE"
           })
           .then(()=>{

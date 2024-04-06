@@ -17,7 +17,7 @@ const DisplayTable =() => {
 
   const employeFetch = async()=>{
     try {
-      const response= await fetch("http://localhost:3002/user");
+      const response= await fetch("https://niyikiza-ms.onrender.com//user");
       const jsonData= await response.json();
       console.log(jsonData);
       let myData= jsonData.filter((data=> data.companyName === comp));
@@ -35,7 +35,7 @@ const DisplayTable =() => {
     if (employeClass !== null) {
     // Make a delete request to your backend server
       
-      await fetch(`http://localhost:3002/user/${employeClass}`,{
+      await fetch(`https://niyikiza-ms.onrender.com//user/${employeClass}`,{
         method: "DELETE"
       })
       .then(()=>{

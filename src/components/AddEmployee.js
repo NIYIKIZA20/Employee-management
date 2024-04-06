@@ -30,7 +30,7 @@ const AddEmployee = ({item}) => {
    try {
     const body= formData;
     
-    const response= await fetch("http://localhost:3002/user", {
+    const response= await fetch("https://niyikiza-ms.onrender.com//user", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body:JSON.stringify(body)

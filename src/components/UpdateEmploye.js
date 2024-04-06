@@ -26,7 +26,7 @@ import React,{useState, Fragment} from 'react'
        try {
         const body= formData;
         
-        const response =await fetch(`http://localhost:3002/user/${props.item[0]}`, {
+        const response =await fetch(`https://niyikiza-ms.onrender.com//user/${props.item[0]}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),

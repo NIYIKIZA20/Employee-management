@@ -9,7 +9,7 @@ const CreateCompany =()=>{
     e.preventDefault();
     try {
      const body = {compName};
-          await fetch("http://localhost:3002/company", {
+          await fetch("https://niyikiza-ms.onrender.com//company", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
