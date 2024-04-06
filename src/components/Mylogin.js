@@ -23,7 +23,7 @@ const Mylogin = () => {
    try {
     const body= formData;
     
-    const response= await fetch("https://niyikiza-ms.onrender.com//user", {
+    const response= await fetch("https://niyikiza-ms.onrender.com/user", {
       method: "POST",
       headers: {"Content-Type":"application/json"},
       body:JSON.stringify(body)
