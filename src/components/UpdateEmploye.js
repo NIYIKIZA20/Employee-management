@@ -1,9 +1,7 @@
 import React,{useState, Fragment} from 'react'
 
  const UpdateEmploye =(props)=> {
-    console.log(props.item[1]);
-
-    //const [compName, setCompName] = useState();
+    
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -31,9 +29,7 @@ import React,{useState, Fragment} from 'react'
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
-        //alert("User well updated");
         window.location = `/display/${props.item[1]}`;  
-        // console.log(response);
       } catch (err) {
         console.error(err.message); 
        }

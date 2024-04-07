@@ -6,8 +6,6 @@ import '../components/styles.css'
 
 const DisplayTable =() => {
   const {comp} = useParams();
-  // console.log(comp);
- 
   const [employe, setEmploye]= useState([]);
   const [employeClass, setEmployeClass]= useState(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,12 +27,9 @@ const DisplayTable =() => {
 
   const CheckEmployeClick = (id) =>{
       setEmployeClass(id);
-    //console.log(id);
   }
   const handleDeleteUser = async() =>{
     if (employeClass !== null) {
-    // Make a delete request to your backend server
-      
       await fetch(`https://niyikiza-ms.onrender.com/user/${employeClass}`,{
         method: "DELETE"
       })

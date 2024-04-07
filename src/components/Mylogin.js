@@ -5,7 +5,7 @@ const Mylogin = () => {
     email: '',
     password: '',
     role: '',
-    age: 5
+    age: 25
   });
 
   const handleChange = (e) => {
@@ -29,12 +29,10 @@ const Mylogin = () => {
       body:JSON.stringify(body)
     });
     alert("Form well submitted!!");
-     console.log(response);
     window.location = '/dashboard';  
   } catch (err) {
     console.error(err.message); 
    }
-    // console.log('Form submitted:', formData);
   };
 
   return (

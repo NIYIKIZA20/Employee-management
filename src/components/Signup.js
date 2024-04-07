@@ -16,15 +16,12 @@ const SignUpForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("you're signed up successfully")                             // Submit formData to backend server for sign up
-    //console.log('Form submitted:', formData);                       NOT YET DONE.
+    alert("you're signed up successfully")                             
     window.location = '/dashboard';
   };
 
-  const handleForgotPassword = () => {
-                                // Handle forgot password action
-    console.log('Forgot password clicked');
-    
+  const handleForgotPassword = () => {  
+    alert("your new password is 111");                           
   };
 
   return (
